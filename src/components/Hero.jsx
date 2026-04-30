@@ -57,7 +57,7 @@ const Hero = () => {
               {h.btnContact}
             </a>
             <a
-              href="/LucaMisurda_CV.pdf"
+              href={`${import.meta.env.BASE_URL}LucaMisurda_CV.pdf`}
               download
               className="px-7 py-3 bg-slate-800/80 hover:bg-slate-700 text-slate-200 rounded-xl font-semibold transition-all text-sm border border-slate-700 flex items-center gap-2"
             >
