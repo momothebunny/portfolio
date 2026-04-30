@@ -1,7 +1,9 @@
-﻿export const projects = [
+﻿const base = import.meta.env.BASE_URL;
+
+export const projects = [
   {
     title: "Au;ReliA – RAG Architektúra Vizsgáló Platform",
-    image: "/images/rag.png",
+    image: `${base}images/rag.png`,
     imagePosition: "object-[80%]",
     description:
       "Szakdolgozati domain-agnosztikus low-code platform (React/Vite) GraphRAG és Agentic RAG rendszerek tervezéséhez, futtatásához és validálásához. Beépített többszintű validációs réteg, PII-maszkolás, forráskritikai node-ok és hallucináció-minimalizálás vállalati szintű AI-megoldásokhoz.",
@@ -12,7 +14,7 @@
   },
   {
     title: "Encephalon;Core – Egészségügyi Prototípus",
-    image: "/images/encephalon.png",
+    image: `${base}images/encephalon.png`,
     description:
       "Full-stack egészségügyi munkafolyamat-prototípus 3D fájdalomtérképpel (Three.js), SOAP dokumentáció generálással (Azure OpenAI / Google Gemini), valós idejű gyógyszerbiztonsági ellenőrzéssel és Azure Cosmos DB adatréteggel.",
     tags: ["React 19", "Three.js", "FastAPI", "Azure OpenAI", "Google Gemini", "Azure Cosmos DB"],
@@ -23,7 +25,7 @@
   },
   {
     title: "AI Zenei Műfajosztályozó & Kreatív Támogató Rendszer",
-    image: "/images/music.png",
+    image: `${base}images/music.png`,
     description:
       "Girls in Tech Yettel-díjas (625 000 Ft) ML rendszer, amely a Spotify több ezer egyedi műfaját struktúrált főkategóriákba rendezi hangjellemzők alapján. Konferenciapublikáció-tervezet, interaktív webes platform fejlesztés alatt.",
     tags: ["Python", "Scikit-learn", "Spotify API", "Music Tech", "ML"],
@@ -34,7 +36,7 @@
   },
   {
     title: "MRI Agydaganat Osztályozó Rendszer",
-    image: "/images/mri.png",
+    image: `${base}images/mri.png`,
     description:
       "Gépi tanulási modellek MRI-felvételeken látható háromféle agydaganat automatizált osztályozására. Képfeldolgozás: Canny élkeresés, CLAHE, HOG és SIFT jellemzőkinyerés. PCA-val csökkentett és teljes jellemzőkészlet összehasonlítása.",
     tags: ["Python", "Computer Vision", "Scikit-learn", "Canny", "SIFT", "PCA"],
@@ -44,7 +46,7 @@
   },
   {
     title: "Byborg AI – Prezentáció Generátor",
-    image: "/images/presentation.png",
+    image: `${base}images/presentation.png`,
     description:
       "Meghívásos Byborg AI Hackathon projekt. Strukturálatlan bemenetből vizuálisan és tartalmilag strukturált diákat generáló AI eszköz, egyedi narratívával és előadói stílussal. Nagy nyelvi modellek kreatív feladatokon.",
     tags: ["Generatív AI", "LLM", "Python"],
@@ -54,7 +56,7 @@
   },
   {
     title: "Vantage Towers – AI Agent Automatizáció (TIMS)",
-    image: "/images/tims.png",
+    image: `${base}images/tims.png`,
     description:
       "AI ágens-alapú automatizációs rendszer a Vantage Towers TIMS platformjához. SAP, Vosima és ServiceNow adatbázisokból heterogén adatok intelligens tisztítása, validálása és migrációja. Komplex vállalati adatmigráció automatizálása nemzetközi környezetben.",
     tags: ["Python", "AI Agents", "SAP", "ServiceNow", "TIMS", "Vosima"],
@@ -64,7 +66,7 @@
   },
   {
     title: "Állatbetegség Osztályozó Rendszer",
-    image: "/images/animals.png",
+    image: `${base}images/animals.png`,
     description:
       "Python-alapú gépi tanulási alkalmazás, amely tünetek alapján osztályozza az állatbetegségeket veszélyes / nem veszélyes kategóriákba. Kaggle adathalmaz, feature engineering, Streamlit interaktív felhasználói felület.",
     tags: ["Python", "Scikit-learn", "Streamlit", "Kaggle", "ML"],
@@ -73,7 +75,7 @@
   },
   {
     title: "Trónok Harca Tematikájú Sakk",
-    image: "/images/chess.png",
+    image: `${base}images/chess.png`,
     description:
       "Egyedi C# WPF asztali sakkalkalmaz, a Trónok harca ihlette saját készítésű pixel art vizuális világgal. OOP elvek, klasszikus sakk-logika implementálása, reszponzív grafikai megjelenítés és hangulatos dizájn.",
     tags: ["C#", "WPF", "OOP", "Pixel Art", "Game Dev"],
@@ -82,7 +84,7 @@
   },
   {
     title: "Vállalati Hálózati Infrastruktúra Tervezése",
-    image: "/images/network.png",
+    image: `${base}images/network.png`,
     description:
       "Komplex ruházati üzlet teljes hálózati architektúrájának és szerveroldali infrastruktúrájának tervezése és szimulációja. Cisco Packet Tracer, VirtualBox, Windows Server 2022 tartományvezérlő.",
     tags: ["Cisco Packet Tracer", "Windows Server 2022", "VirtualBox", "Networking"],
@@ -91,7 +93,7 @@
   },
   {
     title: "Vállalati Beszerzési Folyamatok & SQL",
-    image: "/images/procurement.png",
+    image: `${base}images/procurement.png`,
     description:
       "Fiktív elektronikai gyártóvállalat stratégiai beszerzési folyamatainak modellezése Signavio-ban, SQL adatbázis-struktúra tervezése beszállítói adatok, megrendelések és készletnyilvántartás kezelésére.",
     tags: ["SQL", "Signavio", "BPMN", "ERP"],
@@ -99,7 +101,7 @@
   },
   {
     title: "Receptkezelő CRUD & Tesztelési Keretrendszer",
-    image: "/images/recipe.png",
+    image: `${base}images/recipe.png`,
     description:
       "C# konzolalkalmazás teljes körű CRUD funkcionalitással és SQL adatbázis-kezeléssel. Átfogó Unit tesztek írásával biztosított kód robusztusság, TDD szemléletmód alkalmazása a szoftverminőség garantálásához.",
     tags: ["C#", "SQL", "Unit Testing", "TDD", "CRUD"],
@@ -137,7 +139,7 @@ export const stats = [
 export const experiences = [
   {
     company: "Vantage Towers Zrt.",
-    logo: "/images/vantage.png",
+    logo: `${base}images/vantage.png`,
     role: "Szoftverfejlesztő technikus gyakornok",
     subtitle: "Rotációs tehetséggondozó program",
     period: "2025. szept. – Jelenleg",
@@ -155,7 +157,7 @@ export const experiences = [
   },
   {
     company: "József Attila Gimnázium",
-    logo: "/images/attila.png",
+    logo: `${base}images/attila.png`,
     role: "Informatika / Digitális kultúra óraadó tanár",
     subtitle: "",
     period: "2024. szept. – 2025. júl.",
@@ -171,7 +173,7 @@ export const experiences = [
   },
   {
     company: "Szilágyi Erzsébet Gimnázium",
-    logo: "/images/szilagyi.png",
+    logo: `${base}images/szilagyi.png`,
     role: "Informatika / Digitális kultúra óraadó tanár",
     subtitle: "",
     period: "2023. szept. – 2024. júl.",
@@ -190,7 +192,7 @@ export const experiences = [
 export const education = [
   {
     school: "Óbudai Egyetem",
-    logo: "/images/obuda.png",
+    logo: `${base}images/obuda.png`,
     degree: "BSc mérnökinformatikus",
     field: "AI specializáció",
     gpa: "4.26 / 5.00",
@@ -201,7 +203,7 @@ export const education = [
   },
   {
     school: "Szent Margit Gimnázium",
-    logo: "/images/margit.png",
+    logo: `${base}images/margit.png`,
     degree: "Érettségi bizonyítvány",
     field: "Kitűnő minősítés · Emelt: Informatika (Jeles), Angol nyelv (Jeles)",
     period: "2017. szept. – 2021. máj.",
@@ -211,7 +213,7 @@ export const education = [
   },
   {
     school: "Ritsmann Pál Német Nemzetiségi Általános Iskola",
-    logo: "/images/ritsman.png",
+    logo: `${base}images/ritsman.png`,
     degree: "Általános iskola",
     field: "Német nemzetiségi tagozat",
     period: "2009 – 2017",
@@ -261,12 +263,12 @@ export const languages = [
 ];
 
 export const hobbies = [
-  { name: "Főzés / Sütés", emoji: "🍳", image: "/images/cook.png" },
-  { name: "Kéktúrázás", emoji: "🏔️", image: "/images/hike.png" },
-  { name: "Kertészkedés", emoji: "🌱", image: "/images/garden.png" },
-  { name: "Videójátékok", emoji: "🎮", image: "/images/game.png" },
-  { name: "Képregények / Mangák", emoji: "📚", image: "/images/manga.png" },
-  { name: "Tartalomgyártás / Videóvágás", emoji: "🎬", image: "/images/video.png" },
+  { name: "Főzés / Sütés", emoji: "🍳", image: `${base}images/cook.png` },
+  { name: "Kéktúrázás", emoji: "🏔️", image: `${base}images/hike.png` },
+  { name: "Kertészkedés", emoji: "🌱", image: `${base}images/garden.png` },
+  { name: "Videójátékok", emoji: "🎮", image: `${base}images/game.png` },
+  { name: "Képregények / Mangák", emoji: "📚", image: `${base}images/manga.png` },
+  { name: "Tartalomgyártás / Videóvágás", emoji: "🎬", image: `${base}images/video.png` },
 ];
 
 export const goals = [

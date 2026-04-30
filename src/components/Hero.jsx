@@ -103,7 +103,7 @@ const Hero = () => {
             <div className="relative w-full aspect-square rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl group">
               <div className="absolute inset-0 bg-gradient-to-tr from-fuchsia-500/20 via-transparent to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
               <img
-                src="/images/profile.png"
+                src={`${import.meta.env.BASE_URL}images/profile.png`}
                 alt="Misurda Luca"
                 className="w-full h-full object-cover grayscale-[15%] group-hover:grayscale-0 transition-all duration-700 scale-[1.03] group-hover:scale-100"
               />
