@@ -130,10 +130,10 @@ export const skills = {
 };
 
 export const stats = [
-  { label: "Tanulmányi átlag", value: "4.26" },
+  { label: "Tanulmányi átlag", value: "4.36" },
   { label: "Fejlesztett projekt", value: "11+" },
-  { label: "Hackathon részvétel", value: "3" },
-  { label: "Szakmai tapasztalat", value: "2+ év" },
+  { label: "Hackathon részvétel", value: "4" },
+  { label: "Szakmai tapasztalat", value: "2,5+ év" },
 ];
 
 export const experiences = [
@@ -195,7 +195,7 @@ export const education = [
     logo: `${base}images/obuda.png`,
     degree: "BSc mérnökinformatikus",
     field: "AI specializáció",
-    gpa: "4.26 / 5.00",
+    gpa: "4.36 / 5.00",
     period: "2021. szept. – 2026. júl. (várható)",
     location: "Budapest, Magyarország",
     current: true,

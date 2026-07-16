@@ -119,7 +119,7 @@ const Hero = () => {
                   <div className="text-[10px] text-slate-500 uppercase tracking-wide font-medium">
                     {h.gpaLabel}
                   </div>
-                  <div className="text-base font-bold text-white">4.26 / 5.00</div>
+                  <div className="text-base font-bold text-white">4.36 / 5.00</div>
                 </div>
               </div>
             </div>
